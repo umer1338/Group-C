@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sequence</title>
+    <link rel="stylesheet" href="/CSS/index.css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <style>
+        
+        /* Sequence page */
+
+        .header11 {
+            background-color: black;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            color: white;
+            width: 100%;
+            height: 100px;
+        }
+
+        .container11 {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .left11 {
+            width: 50%;
+            height: 1000px;
+            overflow: hidden;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+        }
+
+        .img11 {
+            width: 500px;
+            height: 600px;
+            border-radius: 10px;
+            border: 8px solid black;
+        }
+
+        .right11 {
+            width: 50%;
+            height: 1000px;
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: x-large;
+            padding: 50px;
+        }
+
+        .right111 {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            height: 500px;
+            width: 80%;
+        }
+
+        .h11 {
+            color: rgb(52, 96, 228);
+        }
+
+        .btn11 {
+            background-color: rgb(0, 0, 0);
+            color: white;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+            margin-top: 50px;
+            padding: 30px;
+            align-items: center;
+            justify-content: center ;
+            display: flex;
+        }
+
+
+        /* Footer-Section */
+
+        .container145 {
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+            height: 500px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            text-align: center;
+
+        }
+
+        i {
+            font-size: 40px;
+            color: #d0a360ff;
+        }
+
+        .line45 {
+            width: 1px;
+            height: 200px;
+            background-color: #d0a360;
+            opacity: 0.5;
+        }
+
+        .box45 {
+            width: 400px;
+            height: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .box45>h3 {
+            font-size: 22px;
+        }
+
+        .container245 {
+            width: 100%;
+            background-color: #d0a360ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box245 {
+            padding: 20px;
+            width: 400px;
+            height: 340px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            line-height: 2.5;
+
+        }
+
+        .box245>button {
+            border: none;
+            border-radius: 15px;
+            width: 200px;
+            padding: 10px 20px;
+            font-size: larger;
+            font-weight: bold;
+            background-color: #4e3b26ff;
+            color: #9ca2a7ff;
+
+        }
+
+        .box245>input {
+            padding: 10px;
+            border: none;
+            border-radius: 15px;
+            outline: none;
+        }
+
+        .box245>h2 {
+            font-size: 22px;
+            font-weight: bolder;
+
+        }
+
+        .box245>h4 {
+            font-size: 20px;
+            font-weight: 500;
+
+        }
+
+
+        .box245>a {
+            text-decoration: none;
+            color: #4e3b26ff;
+            font-size: 19px;
+            font-weight: 700;
+            width: fit-content;
+            height: fit-content;
+        }
+
+        .box245>a:hover {
+            color: gray;
+        }
+
+        .box245>p {
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+
+        footer {
+            display: flex;
+            justify-content: space-between;
+            width: 90%;
+        }
+
+        .footerform45 {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 50px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img id="logo" src="/Images/pologo.png" alt="Logo">
+          </a>
+          <a id="logo1" href="index.html">Playful <b>Outings</b></a>
+    
+          <button id="toggleBtn" class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  justify-content-around " id="navlinks">
+              <li class="nav-item">
+                <a id="line" class="nav-link active text-white" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a id="line" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Outdoor Games
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="Soccer.html">Soccer</a></li>
+                  <li><a class="dropdown-item" href="Badminton.html">Badminton</a></li>
+                  <li><a class="dropdown-item" href="Cricket.html">Cricket</a></li>
+                  <li><a class="dropdown-item" href="cornhole.html">Cornhole</a></li>
+                  <li><a class="dropdown-item" href="frisbee.html">Frisbee</a></li>
+                  <li><a class="dropdown-item" href="Horseshoes.html">Horseshoes</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown text-white">
+                <a id="line" class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Indoor Games
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="chess.html">Chess</a></li>
+                    <li><a class="dropdown-item" href="Sequence.html">Sequence</a></li>
+                    <li><a class="dropdown-item" href="Checkers.html">Checkers</a></li>
+                    <li><a class="dropdown-item" href="Scrabble.html">Scrables</a></li>
+                    <li><a class="dropdown-item" href="Dominoes.html">Dominoes</a></li>
+                    <li><a class="dropdown-item" href="Ludo.html">Ludo</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a id="line" class="nav-link text-white" href="/html/aboutus.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a id="line" class="nav-link text-white" href="contact.html">Contact Us</a>
+              </li>
+         
+            </ul>
+            <form class="search-bar input-group" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="searchinput">
+              <button class="btn" type="submit" id="searchIcon">
+                <i class="bi bi-search"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    
+    
+    <div class="header11">
+        <h1>SEQUENCE</h1>
+    </div>
+    <div class="container11">
+        <div class="left11">
+            <img class="img11" src="https://dailyworkerplacement.com/wp-content/uploads/2022/02/Sequence-featured.jpg" alt="">
+        </div>
+
+        <div class="right11">
+            <div class="right111">
+                <h1 class="h11">150$</h1>
+                <p>Our Deluxe Sequence Game Set is crafted from high-quality materials, featuring a large, durable game board with a vibrant design for easy visibility. The set includes a deck of playing cards, game chips, and a clear instruction manual for hours of family fun.
+                </p>
+             
+                <li>1 x Game Board – 60cm x 40cm </li>
+                <li>1 x Deck of Sequence Playing Cards </li>
+                <li>135 x Game Chips </li>
+                <li>Packed Game Weight – 2.5kgs</li>
+
+                <button class="btn11">BUY NOW</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Footer-Section -->
+
+    <div class="container145">
+        <div class="box45">
+            <i class="fa-solid fa-crown"></i>
+            <h3>PREMIUM NZ QUALITY</h3>
+            <p>Locally sourced wood allow us to craft the highest quality products on the market.</p>
+        </div>
+
+        <div class="line45"></div>
+
+        <div class="box45">
+            <i class="fa-solid fa-comment-dollar"></i>
+            <h3>PAID INSTALLMENT OPTIONS</h3>
+            <p>Utilise our payment method options. Simply choose afterpay at the checkout.</p>
+        </div>
+
+        <div class="line45"></div>
+
+        <div class="box45">
+            <i class="fa-solid fa-thumbs-up"></i>
+            <h3>SATISFACTION GUARANTEE</h3>
+            <p>We know you will be satisfied with your product, so feel free to let us know how</p>
+        </div>
+
+        <div class="line45"></div>
+
+        <div class="box45">
+            <i class="fa-solid fa-house"></i>
+            <h3>FAMILY OWNED & OPERATED</h3>
+            <p>With local roots in the community. Empowering and supporting people imp</p>
+        </div>
+    </div>
+
+
+    <div class="container245">
+        <footer>
+            <div class="box245">
+                <h2>SHOP</h2>
+                <a href="#">Shop</a>
+                <a href="#">Cornhole</a>
+                <a href="#">Accessories</a>
+                <a href="#">Outdoor Products</a>
+                <a href="#">Indoor Products</a>
+            </div>
+            <div class="box245">
+                <h2>QUIK LINKS</h2>
+                <a href="#">About Us</a>
+                <a href="#">Corporate Branding</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+
+            </div>
+            <div class="box245">
+                <h2>CONTACT US</h2>
+                <p>33/23 Tukorako Drive, Mount Maunganui, Tauranga 3116</p>
+                <p>Phone: 027 111 2210</p>
+                <p>Email:helloworld@gmail.com</p>
+            </div>
+            <div class="box245">
+                <h2>SUBSCRIBE TO OUR NEWSLETTER</h2>
+                <h4>Stay ahead of the game by signing up to receive updates on our latest releases and promotions.</h4>
+                <input type="type text">
+                <button type="submit">Sign up</button>
+
+
+            </div>
+        </footer>
+
+    </div>
+
+
+
+
+    <div id="ftrlst"></div>
+    <div class="foterlast">
+      <div class="ftld"><a class="navbar-brand" href="#">
+          <img id="logo" src="/Images/pologo.png" alt="Logo">
+        </a>
+        <a id="logo123" href="index.html">Playful <b>Outings</b></a>
+      </div>
+  
+  
+      <p>Copyright Playful Outings NZ 2024 | Website Design by RAMNS Aptech</p>
+    </div>
+  
+  
+    <div class="ftril">
+      <div class="ftricons">
+        <i class="fa-brands fa-cc-visa"></i>
+        <i class="fa-brands fa-cc-mastercard"></i>
+        <i class="fa-brands fa-google-pay"></i>
+        <i class="fa-brands fa-paypal"></i>
+      </div>
+    </div>
+  
+  
+  
+  
+  
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+  
+</body>
+
+</html>
